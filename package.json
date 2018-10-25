@@ -1,0 +1,26 @@
+{
+  "name": "SimpleApi",
+  "version": "0.0.0-1",
+  "description": "A simple api using koa2, Nodejs, and MongoDB",
+  "main": "index.js",
+  "repository": "https://github.com/Sizix18/SimpleApi",
+  "author": "Jeff Einspahr",
+  "license": "MIT",
+  "private": false,
+  "scripts":{
+    "start": "node --inpsect starter.js"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "koa": "^2.6.1",
+    "koa-bodyparser": "^4.2.1",
+    "koa-logger": "^3.2.0",
+    "koa-router": "^7.4.0",
+    "monk": "^6.0.6"
+  },
+  "devDependencies": {
+    "eslint": "^5.7.0",
+    "eslint-config-esmc": "^1.0.11",
+    "esm": "^3.0.84"
+  }
+}
