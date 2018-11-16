@@ -1,16 +1,18 @@
 {
-  "name": "SimpleApi",
+  "name": "Node-Api-Template",
   "version": "0.0.0-1",
-  "description": "A simple api using koa2, Nodejs, and MongoDB",
+  "description": "A simple api template using koa2, Nodejs, and MongoDB",
   "main": "index.js",
   "repository": "https://github.com/Sizix18/SimpleApi",
   "author": "Jeff Einspahr",
   "license": "MIT",
   "private": false,
-  "scripts":{
+  "scripts": {
     "start": "node --inpsect starter.js"
   },
   "dependencies": {
+    "dotenv": "^6.1.0",
+    "esm": "^3.0.84",
     "fs": "^0.0.1-security",
     "koa": "^2.6.1",
     "koa-bodyparser": "^4.2.1",
@@ -19,8 +21,7 @@
     "monk": "^6.0.6"
   },
   "devDependencies": {
-    "eslint": "^5.7.0",
-    "eslint-config-esmc": "^1.0.11",
-    "esm": "^3.0.84"
+    "eslint": "^5.9.0",
+    "eslint-config-esmc": "^1.0.11"
   }
 }

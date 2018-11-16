@@ -1,6 +1,10 @@
+const collectionString = 'Apps';
+
 export default {
-  get_app: async (ctx) => {
-    ctx.response.status = 200;
-    ctx.response.message = 'We Did It!';
+  getApp: async (ctx) => {
+    const collection = ctx.db.get(collectionString);
+    const result = await collection.findOne();
+    ctx.response.message = 200;
+    ctx.response.body = result;
   },
 };
