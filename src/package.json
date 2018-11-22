@@ -3,21 +3,26 @@
   "version": "0.0.0-1",
   "description": "A simple api template using koa2, Nodejs, and MongoDB",
   "main": "index.js",
-  "repository": "https://github.com/Sizix18/SimpleApi",
+  "repository": "https://github.com/Sizix18/Node-Api-Template",
   "author": "Jeff Einspahr",
   "license": "MIT",
   "private": false,
   "scripts": {
-    "start": "node --inpsect starter.js"
+    "start": "node --inspect index.js",
+    "docs": "apidoc -e node_modules"
   },
   "dependencies": {
+    "@koa/cors": "2",
     "dotenv": "^6.1.0",
     "esm": "^3.0.84",
     "fs": "^0.0.1-security",
     "koa": "^2.6.1",
     "koa-bodyparser": "^4.2.1",
+    "koa-favicon": "^2.0.1",
     "koa-logger": "^3.2.0",
+    "koa-mount": "^4.0.0",
     "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
     "monk": "^6.0.6"
   },
   "devDependencies": {

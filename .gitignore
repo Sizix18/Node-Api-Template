@@ -75,6 +75,9 @@ typings/
 # Serverless directories
 .serverless
 
+# Apidoc generated directory
+doc/
+
 ### Test ###
 ### Ignore all files that could be used to test your code and
 ### you wouldn't want to push
