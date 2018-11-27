@@ -8,8 +8,9 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "start": "node --inspect index.js",
-    "docs": "apidoc -e node_modules"
+    "start-dev": "nodemon --inspect index.js headless",
+    "docs": "apidoc -e node_modules",
+    "start": "node index.js"
   },
   "dependencies": {
     "@koa/cors": "2",
@@ -23,10 +24,12 @@
     "koa-mount": "^4.0.0",
     "koa-router": "^7.4.0",
     "koa-static": "^5.0.0",
-    "monk": "^6.0.6"
+    "monk": "^6.0.6",
+    "prom-client": "^11.2.0"
   },
   "devDependencies": {
     "eslint": "^5.9.0",
-    "eslint-config-esmc": "^1.0.11"
+    "eslint-config-esmc": "^1.0.11",
+    "nodemon": "^1.18.6"
   }
 }
