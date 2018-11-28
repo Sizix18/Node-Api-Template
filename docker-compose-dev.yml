@@ -1,0 +1,16 @@
+version: '3'
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile-dev
+    environment:
+     - PORT=8080
+     - LOGGING=true
+     - DEBUG=
+     - NODE_ENV=development
+    ports:
+     - "8018:8080"
+     - "9229:9229"
+    volumes:
+     - "./src:/src"

@@ -36,10 +36,12 @@ app.use(Cors());
 app.use(Favicon('favicon.ico'));
 
 // Mount Api-Doc to version route
-app.use(Mount(`/v${majorVersion}`, Serve('./doc')));
+app.use(Mount(`/documentation`, Serve('./doc')));
 
 // Create Router for service infomation at root url
 const rootRouter = new Router();
+
+// Add route to display basic api info at root
 rootRouter.get('/', async (ctx, next) => {
   ctx.body = {
     name: pkg.name,

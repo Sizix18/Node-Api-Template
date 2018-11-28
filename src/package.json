@@ -16,7 +16,6 @@
     "@koa/cors": "2",
     "dotenv": "^6.1.0",
     "esm": "^3.0.84",
-    "fs": "^0.0.1-security",
     "koa": "^2.6.1",
     "koa-bodyparser": "^4.2.1",
     "koa-favicon": "^2.0.1",
